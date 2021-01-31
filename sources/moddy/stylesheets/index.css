@@ -19,8 +19,9 @@ header {
 }
 
 header strong {
-    font-size: 3rem;
+    font-size: 2.23rem;
     margin-bottom: 1rem;
+    color: rgb(233, 233, 233);
 }
 
 header div {
