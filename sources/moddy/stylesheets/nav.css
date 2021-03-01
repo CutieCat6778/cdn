@@ -16,10 +16,16 @@ ul {
     padding: 1.5rem 2.50rem;
     position: sticky;
     display: block;
+    text-align: center;
 }
 
 li {
-    float: left;
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    color:white;
+    margin-right:10px;
+    text-align: center;
 }
 
 li a {
@@ -27,6 +33,7 @@ li a {
     color: white;
     margin-left: 1rem;
     display: inline-block;
+    font-size: 1.4rem;
 }
 li a.a {
     transition: 0.5s;
@@ -39,7 +46,14 @@ li a.a:hover{
 }
 
 li a strong{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    position: relative;
+    top: 6.5px;
+    text-align: center;
+}
+
+ul br {
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -47,5 +61,15 @@ li a strong{
         transition: 0.5s;
         position: relative;
         top: -5px
+    }
+    li a strong{
+        font-size: 1.7rem;
+        position: relative;
+        top: -6px;
+        text-align: center;
+        display: block;
+    }
+    ul br{
+        display: block;
     }
 }
